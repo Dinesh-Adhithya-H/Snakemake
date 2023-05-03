@@ -5,4 +5,4 @@ rule cram_to_bam:
     output:
         "/home/ubuntu/datasets/output.bam"
     shell:
-        "/home/ubuntu/samtools-1.9/samtools view -h -T {input} -o {output}"
+        "/home/ubuntu/samtools-1.9/samtools view -h -T {input} - > {output}"
